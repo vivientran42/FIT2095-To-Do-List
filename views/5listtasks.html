@@ -13,25 +13,46 @@
         <a 
             href="/">Home
         </a>
-        <br>
+        <br><br>
         <a 
             href="/newtask">Add New Task
         </a>
+        <a 
+            href="/update">Update Task
+        </a> 
+        <a 
+            href="/deletebyid">Delete By Id
+        </a>  
+        <a 
+            href="/deleteall">Delete All
+        </a> 
         <br><br>
         <table>
             <tr>
+                <td>ID</td>
                 <td>Name</td>
+                <td>Assigned To</td>
                 <td>Due Date</td>
+                <td>Status</td>
                 <td>Description</td>
             </tr>
 
             <% for ( var i =0; i< taskDb.length;i++){ %>
                 <tr>
                     <td>
+                        <%= taskDb[i].id %>
+                    </td>
+                    <td>
                         <%= taskDb[i].name %>
                     </td>
                     <td>
+                        <%= taskDb[i].assign %>
+                    </td>
+                    <td>
                         <%= taskDb[i].due %>
+                    </td>
+                    <td>
+                        <%= taskDb[i].status %>
                     </td>
                     <td>
                         <%= taskDb[i].desc %>

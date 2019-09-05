@@ -10,12 +10,23 @@
         <br>
         <a 
             href="/listtasks">List All Tasks
-        </a>
+        </a> 
+        <a 
+            href="/update">Update Task
+        </a> 
+        <a 
+            href="/deletebyid">Delete By Id
+        </a>  
+        <a 
+            href="/deleteall">Delete All
+        </a> 
         <br> <br>
         <form action="/newtask" method="POST"> 
-            Task Name <input type="text" name="name"/> <br> <br>
-            Task Due <input type="date" name="due"/> <br> <br>
-            Task Desc <input type="text" name="desc"/> <br> <br>
+            Task name: <input type="text" name="name"/> <br> <br>
+            Assigned to: <input type="text" name="assign"> <br><br>
+            Task due: <input type="date" name="due"/> <br> <br>
+            Task status: <input type="text" name="status"/> <br><br>
+            Task description: <input type="text" name="desc"/> <br> <br>
             <button>Submit</button>
         </form>
 
